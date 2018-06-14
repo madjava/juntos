@@ -1,10 +1,10 @@
-//require('./config.js')
+require('./config.js');
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'unconf_db'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME
 });
 module.exports = connection;

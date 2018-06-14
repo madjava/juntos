@@ -7,8 +7,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const port = normalizePort(process.env.PORT || '3000');
 const app = express();
-//const unconferenceRouter = require('./routes/unconference');
-//const participantsRouter = require('./routes/participants');
+// const unconferenceRouter = require('./routes/unconference');
+// const participantsRouter = require('./routes/participants');
 
 app.use(logger('dev'));
 app.use(express.json());
