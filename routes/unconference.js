@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const mysql = require('mysql');
 /**
- * Move values to environment variables
+ * Move values to environment variables, have a peak at the config.js file
  */
 const connection = mysql.createConnection({
     host: 'unconfdb.cphfwfjjnr1h.us-east-1.rds.amazonaws.com',

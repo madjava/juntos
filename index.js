@@ -5,6 +5,10 @@ app.get('/', function(req, res) {
     res.send({ message: "Hello world!" });
 });
 
+app.get('/unconference', (req, res) => {
+    res.send({ d: "ok" });
+});
+
 /** 
  * 1. Create a route /unconference that returns an object with the following info
  *      Company Name, Event Location, Date
